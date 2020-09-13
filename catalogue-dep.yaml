@@ -26,6 +26,7 @@ spec:
         name: catalogue
         ports:
         - containerPort: 80
+          name: http-catalogue
         readinessProbe:
           httpGet:
             path: /health

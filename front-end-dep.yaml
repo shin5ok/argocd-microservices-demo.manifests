@@ -27,6 +27,7 @@ spec:
         name: front-end
         ports:
         - containerPort: 8079
+          name: http-front-end
         readinessProbe:
           httpGet:
             path: /

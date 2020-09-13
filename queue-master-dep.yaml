@@ -32,6 +32,7 @@ spec:
         name: queue-master
         ports:
         - containerPort: 80
+          name: http-qm
         readinessProbe:
           httpGet:
             path: /health

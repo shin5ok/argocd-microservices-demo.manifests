@@ -26,6 +26,7 @@ spec:
         name: payment
         ports:
         - containerPort: 80
+          name: http-payment
         readinessProbe:
           httpGet:
             path: /health

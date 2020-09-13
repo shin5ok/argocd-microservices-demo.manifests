@@ -32,6 +32,7 @@ spec:
         name: shipping
         ports:
         - containerPort: 80
+          name: http-shipping
         readinessProbe:
           httpGet:
             path: /health
