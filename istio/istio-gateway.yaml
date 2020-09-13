@@ -23,6 +23,16 @@ spec:
   gateways:
   - sock-shop-gateway
   http:
+  - match:
+    - uri:
+        exact: /README.html
+    - uri:
+        prefix: /nginx
+    route:
+    - destination:
+        host: my-nginx
+        port:
+          number: 80
   # - match:
   #   - uri:
   #       exact: /productpage
