@@ -5,7 +5,6 @@ import glob
 import yaml
 
 # def getorg():
-   
 
 def main():
     for dep in glob.glob("*-dep.yaml"):
